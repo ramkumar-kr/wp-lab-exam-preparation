@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+<center>		<h2>Register</h2></center>
+	</head>
+	<body><center>
+		<form action="register.php" method="post">
+			<table style="border : 1px solid black;">
+				<tr>
+					<td><label for="uname">Username</label></td>
+					<td><input type="text" name="uname" required/></td>
+				</tr>
+				<tr>
+					<td><label for="uemail">Email Address</label></td>
+					<td><input type="email" name="uemail" required/></td>
+				</tr>
+
+				<tr>
+					<td><label for="pass">Password</label></td>
+					<td><input type="password" name="pass" required/></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;"><input  type="submit" value="Register"/>
+				</tr>
+
+			</table>
+		</form>
+		</center>
+	</body>
+</html>

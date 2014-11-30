@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RVCE - Contact us</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="logo.png" class="logo">
+    <table>
+        <tr class="headertr">
+            <td class="header"><a href="index.html">Home</td>
+            <td  class="header"><a href="aboutus.html">About Us</a></td>
+            <td  class="header"><a href="courses.html">Courses</a></td>
+            <td  class="header" style="color:black;">Contact Us</td>
+            <td  class="header"><button id = "custbtn"> Customize</button></td>
+        </tr>
+    </table>
+    <table>
+        <tr class="cust" id="cust" hidden>
+            <td class="cust">Pick the background color : <input type="color" value="#ffffff" onchange="document.body.style.backgroundColor=this.value;"></td>
+            <td class="cust">Pick the Text color       : <input type="color" value="#000000" onchange="document.body.style.color=this.value;"></td>
+        </tr>
+    </table>
+</header>
+
+<br/><br/>
+<center>
+
+    <table class="normal">
+<tr><td colspan="2"style="text-align:center;"><h3>Enter your feedback</h3></td></tr>
+
+        <tr><td style="text-align:center; width:200px;"> <label for="name">Name  </label></td>
+            <td  ><input type="text" name="name" required></td></tr>
+        <tr></tr>
+        <tr><td  style="text-align:center"><label for="name">Email  </label></td>
+            <td  ><input type="email" name="name" required></td></tr>
+        <tr></tr>
+        <tr><td  style="text-align:center"><label for="name">Feedback  </label></td>
+            <td  ><textarea name="name" ></textarea></td></tr>
+        <tr></tr>
+    <tr><td colspan="2" style="text-align:center;"><input type="submit" value="Submit"></td></tr>
+
+
+    </table>
+    <br/>
+</center>
+
+<br/>
+
+<footer>
+    <table>
+        <tr class="footer">
+            <td class="footer"> RVCE Bangalore</td>
+            <td class="footer">Made by Ram Kumar K R</td>
+        </tr>
+    </table>
+</footer>
+<script src="//code.jquery.com/jquery.js"></script>
+<script>
+    $(function(){
+        $('#custbtn').click(function(){
+            $('#cust').toggle('slow');
+        });
+    });
+</script>
+</body>
+</html>

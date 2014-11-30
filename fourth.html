@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fourth Program</title>
+</head>
+<body>
+<div>
+    <p>Pick the background color you like</p>
+
+    <input type="color" id="color123" value="#ffffff"  />
+</div>
+<hr>
+<div>
+    <p>Clicking on the below link will display an alert box</p>
+    <a href="" id="link">Click this Link</a>
+</div>
+<hr>
+<div>
+    <p id="text">If you click the button once,I will disappear.If you click it again, I appear</p>
+    <button id="btn">Toggle the text </button>
+</div>
+<hr>
+<div>
+    <p id="text2">If you enter Hi in the text field, it will respond by saying Hello</p>
+    <input type="text" id="input1"/>
+</div>
+<hr>
+<div>
+    <p>On selecting options from the multiple select field, you will see the selected options below.</p>
+    <select multiple id="select1" style="width: 500px;text-align:center;">
+        <option>one</option>
+        <option>two</option>
+        <option>three</option>
+        <option>four</option>
+        <option>five</option>
+        <option>six</option>
+        <option>seven</option>
+        <option>eight</option>
+        <option>nine</option>
+        <option>ten</option>
+    </select>
+    <p>Selected values are : </p>
+    <p id='output1'></p>
+</div>
+<hr>
+<script src="//code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('#link').click(function(){
+        alert('You clicked the link');
+    });
+    $('#btn').click(function(){
+        $('#text').toggle('slow');
+    });
+    $('#input1').focus(function(){
+        $('#input1').css({"color":"#101010","background-color":"#eeeeee"});
+    });
+    $('#input1').keyup(function(){
+        if($('#input1').val()=='Hi' ||$('#input1').val()=='hi' ||$('#input1').val()=='HI' ){
+            alert("Hello");
+        }
+
+    });
+    $('#input1').blur(function(){
+        $('#input1').css({'background-color':'white'});
+    });
+    $('#select1').change(function (){
+        var values=$('#select1').val();
+        $('#output1').html(values);
+
+
+    });
+    $('#color123').change(function(){
+
+    $('body').css('background-color',$('#color123').val());
+    });
+
+});
+</script>
+<script>
+//document.body.style.backgroundColor=this.value;
+</script>
+</body>
+</html>

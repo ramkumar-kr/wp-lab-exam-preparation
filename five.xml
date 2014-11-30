@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="five.css"?>
+
+<stu_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="five.xsd">
+    <student>
+        <usn>1RV11IS042</usn>
+        <name>Ram Kumar K R</name>
+        <email>ramkumarkr@rvce.edu.in</email>
+        <phone>5858585858</phone>
+    </student>
+    <student>
+        <usn>1RV11IS021</usn>
+        <name>Ganesh Arkalgud</name>
+        <email>ganesh.arkalgud@rvce.edu.in</email>
+        <phone>9898989898</phone>
+    </student>
+    <student>
+        <usn>1RV11IS040</usn>
+        <name>Rahul R</name>
+        <email>sirrahul@rvce.edu.in</email>
+        <phone>8787878787</phone>
+    </student>
+    <student>
+        <usn>1RV11IS056</usn>
+        <name>Ujjwal Gulecha</name>
+        <email>ujjwalgulecha@rvce.edu.in</email>
+        <phone>6565656565</phone>
+    </student>
+</stu_data>

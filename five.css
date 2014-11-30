@@ -1,0 +1,44 @@
+stu_data{
+    display:block;
+}
+student{
+    display:block;
+    background-color: #efefef;
+
+}
+usn{
+    display:block;
+    background-color: #1f8cbe;
+    border-bottom:3px solid black;
+    border-top:3px solid black;
+    text-align:center;
+    color:#efefef;
+    font-size:18pt;
+    font-family:sans-serif;
+    transition:background-color 0.1s,color 0.1s;
+}
+usn:hover{
+    color:#1f8cbe;
+    background-color:#000000;
+}
+name,email,phone{
+    display:block;
+    font-family:sans-serif;
+    font-size:13pt;
+    border-top:1px solid black;
+    transition:background-color 0.1s,color 0.1s;
+}
+
+phone:hover{
+    color:#efefef;
+    background-color:grey;
+}
+name:hover{
+    color:#efefef;
+    background-color:grey;
+}
+
+email:hover{
+    color:#efefef;
+    background-color:grey;
+}

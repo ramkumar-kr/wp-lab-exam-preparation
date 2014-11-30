@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Third Program</title>
+</head>
+<body onload="loader();" onUnload="unloader();">
+<div>
+    Pick the background color of your choice
+    <input type="color" value="#ffffff" onchange="document.body.style.backgroundColor = this.value;"/><r/>
+    Pick the text color of your choice &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="color" value="#000000" onchange="document.body.style.color = this.value;"/>
+</div>
+<hr/>
+<div>
+    <p>This text field demonstrates onfocus, onblur, onselect events</p>
+    <input type="text" id="ip1" onFocus="focusip();"onBlur="blurip();" onSelect="selectip();"/>
+
+</div>
+<hr/>
+<div>
+    <p>This unloaded image displays an alert and demonstrates onerror and onabort</p>
+    <img src="imgnotfound.png" onError="errorimg();" onAbort="abortimg();" />
+</div>
+<hr/>
+<div>
+    <p>This button demonstrates onclick event</p>
+    <button onclick = "clickbtn();">Click me to display an alert</button>
+</div>
+<hr/>
+<div>
+    <p>The below area  demonstrates mouseout and mouseover events</p>
+    <div  id="div1">
+        <p id="para1" style="background-color:green;color:white;width : 200px; height : 80px;text-align:center;font-size:16pt;" onMouseOver="mouseoverdiv();" onMouseOut="mouseoutdiv();"> This is my house</p>
+    </div>
+</div>
+<hr/>
+<div>
+<p>This form below demonstrates onsubmit and onchange event </p>
+    <form onsubmit="submitform();">
+        <input type="text" placeholder="Enter some text" id="ipf1" onChange="changeip();"/><p id="para">Text Entered will reflect here</p>
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+<script src="third.js"></script>
+</body>
+</html>

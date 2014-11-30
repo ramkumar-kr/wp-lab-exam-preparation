@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RVCE</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="logo.png" class="logo">
+    <table>
+        <tr class="headertr">
+            <td class="header"  style="color:black;">Home</td>
+            <td  class="header"><a href="aboutus.html">About Us</a></td>
+            <td  class="header"><a href="courses.html">Courses</a></td>
+            <td  class="header"><a href="contactus.html">Contact Us</a></td>
+            <td  class="header"><button id = "custbtn"> Customize</button></td>
+        </tr>
+        </table>
+    <table>
+        <tr class="cust" id="cust" hidden>
+            <td class="cust">Pick the background color : <input type="color" value="#ffffff" onchange="document.body.style.backgroundColor=this.value; "></td>
+            <td class="cust">Pick the Text color       : <input type="color" value="#000000" onchange="document.body.style.color=this.value;"></td>
+        </tr>
+    </table>
+</header>
+<br/>
+<br/>
+<table class="home">
+    <tr class="home">
+        <td class="home"><img src="principal.jpg" class="home"></td>
+        <td class="home">Dear Students, I am pleased ...</td>
+    </tr>
+    <tr class="home">
+        <td class="home">RVCE is continously researching for new sustainable technologies for the mankind</td>
+        <td class="home"><img src="research.jpg" class="home"></td>
+    </tr>
+    <tr class="home">
+        <td class="home"><img src="alumni.jpg" class="home"></td>
+        <td class="home">RVCE has a very vibrant alumni association</td>
+    </tr>
+
+</table>
+<br/>
+<br/>
+
+<footer>
+    <table>
+        <tr class="footer">
+            <td class="footer"> RVCE Bangalore</td>
+            <td class="footer">Made by Ram Kumar K R</td>
+        </tr>
+    </table>
+</footer>
+<script src="//code.jquery.com/jquery.js"></script>
+<script>
+    $(function(){
+       $('#custbtn').click(function(){
+           $('#cust').toggle('slow');
+       });
+    });
+</script>
+</body>
+</html>

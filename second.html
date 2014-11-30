@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Second Program</title>
+     <link href="second.css" rel="stylesheet"/>
+</head>
+<body>
+<input type="file" id="f1" onchange="handlefiles(this.files);"/>
+<p id='para'></p>
+<script>
+   function handlefiles(file){
+       var reader = new FileReader();
+       alert(file[0].type);
+       reader.onload = function(e) {
+           para = document.getElementById('para');
+           var text =reader.result;
+           var arr = text.split(',');
+           document.write('<!DOCTYPE html><html><head lang="en"><meta charset="UTF-8"><title>Second Program</title><link href="second.css" rel="stylesheet"/></head><body><br/><table>');
+           for (i=0;i<arr.length;i+=2)
+           {
+               document.write('<tr><td>'+arr[i]+'</td><td>'+arr[i+1]+'</td></tr>');
+           }
+           document.write('</table><hr/>');
+           document.write('<div><input type="file" id="f1" onchange="handlefiles(this.files);"/></div>');
+
+
+       }
+       reader.readAsText(file[0]);
+   }
+</script>
+</body>
+</html>

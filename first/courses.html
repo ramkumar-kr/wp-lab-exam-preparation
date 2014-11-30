@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RVCE - Courses</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="logo.png" class="logo" >
+    <table>
+        <tr class="headertr">
+            <td class="header"><a href="index.html">Home</td>
+            <td  class="header"><a href="aboutus.html">About Us</a></td>
+            <td  class="header" style="color:black;">Courses</td>
+            <td  class="header"><a href="contactus.html">Contact Us</a></td>
+            <td  class="header"><button id = "custbtn"> Customize</button></td>
+        </tr>
+    </table>
+    <table>
+        <tr class="cust" id="cust" hidden>
+            <td class="cust">Pick the background color : <input type="color" value="#ffffff" onchange="document.body.style.backgroundColor=this.value;"></td>
+            <td class="cust">Pick the Text color       : <input type="color" value="#000000" onchange="document.body.style.color=this.value;"></td>
+        </tr>
+    </table>
+</header>
+
+<table>
+    <tr>
+        <td style="width:500px; text-align:center;"><h3>Undergraduate Courses</h3></td>
+        <td style="width:500px;text-align:center;"><h3>Postgraduate Courses</h3></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Information Science</li>
+                <li>Computer Science</li>
+                <li>Electronics and Communication</li>
+                <li>Electrical and Electronics</li>
+                <li>Mechanical</li>
+                <li>Telecommunication</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Information Science</li>
+                <li>Computer Science</li>
+                <li>Electronics and Communication</li>
+                <li>Electrical and Electronics</li>
+                <li>Mechanical</li>
+                <li>Telecommunication</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+<footer>
+    <table>
+        <tr class="footer">
+            <td class="footer"> RVCE Bangalore</td>
+            <td class="footer">Made by Ram Kumar K R</td>
+        </tr>
+    </table>
+</footer>
+<script src="//code.jquery.com/jquery.js"></script>
+<script>
+    $(function(){
+        $('#custbtn').click(function(){
+            $('#cust').toggle('slow');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RVCE - About us</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="logo.png" class="logo">
+    <table>
+        <tr class="headertr">
+            <td class="header"><a href="index.html">Home</td>
+            <td  class="header" style="color:black;">About Us</td>
+            <td  class="header"><a href="courses.html">Courses</a></td>
+            <td  class="header"><a href="contactus.html">Contact Us</a></td>
+            <td  class="header"><button id = "custbtn"> Customize</button></td>
+        </tr>
+    </table>
+    <table>
+        <tr class="cust" id="cust" hidden>
+            <td class="cust">Pick the background color : <input type="color" value="#ffffff" onchange="document.body.style.backgroundColor=this.value;"></td>
+            <td class="cust">Pick the Text color       : <input type="color" value="#000000" onchange="document.body.style.color=this.value;"></td>
+        </tr>
+    </table>
+</header>
+<br/>
+<table>
+    <tr><td class="normal"><h2>Facts about RVCE</h3></td></tr>
+    <tr><td class="normal">RVCE was established in 1963</td></tr>
+    <tr><td class="normal">Lies near river Vrushabhavathi</td></tr>
+    <tr><td  class="normal">52 acres of campus</td></tr>
+    <tr><td  class="normal">150 companies visiting the campus</td></tr>
+</table>
+<br/>
+<footer>
+    <table>
+        <tr class="footer">
+            <td class="footer"> RVCE Bangalore</td>
+            <td class="footer">Made by Ram Kumar K R</td>
+        </tr>
+    </table>
+</footer>
+<script src="//code.jquery.com/jquery.js"></script>
+<script>
+    $(function(){
+        $('#custbtn').click(function(){
+            $('#cust').toggle('slow');
+        });
+    });
+</script>
+</body>
+</html>

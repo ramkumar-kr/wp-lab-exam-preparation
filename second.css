@@ -1,0 +1,14 @@
+table,tr{
+    border : 1px solid black;
+    border-collapse:collapse;
+    transition : color 0.1s, background-color 0.1s;
+}
+tr:hover{
+    color:white;
+    background-color:black;
+}
+
+td{
+    text-align:center;
+    border-right: 1px solid black;
+}
