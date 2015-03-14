@@ -11,4 +11,4 @@ For the 6th program, you need a database with 2 tables.
 1. login - fields are - uname, pass, email
 2. feedback - fields are - uname, feedback
 
-You can view it live on http://webprogramming.parseapp.com
+You can view it live on https://webprogramming.parseapp.com
